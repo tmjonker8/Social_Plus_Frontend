@@ -1,0 +1,73 @@
+<div
+  class="banner-background border border-solid border-4 border-black flex items-center justify-center h-48 mb-4 rounded bg-black dark:bg-gray-800"
+>
+  <p class="text-2xl text-black dark:text-gray-500 mr-10">
+    <img
+      class="profile-image rounded-full"
+      [ngClass]="{
+        'border border-solid border-4 border-black : user.imgPath':
+          user.imgPath
+      }"
+      src="{{
+        user.imgPath
+          ? user.imgPath
+          : '../../assets/images/profile-placeholder.png'
+      }}"
+      alt="profile picture"
+    />
+  </p>
+
+  <p class="text-2xl text-white dark:text-gray-500">
+    {{ user !== null ? user.username : null }}
+  </p>
+</div>
+
+<div class="grid grid-cols-2 gap-4 mb-4">
+  <div
+    class="flex inline items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-black dark:text-gray-500 ww">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+</div>
+<div
+  class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800 opaque"
+>
+  <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+  <div
+    class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 opaque"
+  >
+    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+  </div>
+</div>

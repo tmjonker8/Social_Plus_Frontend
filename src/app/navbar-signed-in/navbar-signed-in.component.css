@@ -1,0 +1,10 @@
+.pi-modal {
+    border: 2px solid black;
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

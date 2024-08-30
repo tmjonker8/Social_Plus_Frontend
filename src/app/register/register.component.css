@@ -1,0 +1,70 @@
+form {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 100px auto 0 auto;
+    width: 500px;
+}
+
+.outer {
+    height:600px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.background {
+    background-image: url("../../assets/images/social.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 1300px;
+}
+
+h1 {
+    -webkit-text-stroke: 3px black;
+    color: white;
+    margin-top: 90px;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+.animate {
+    transform: translateX(-200%);
+    margin-left: 50%;
+    animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+  @keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+
+    .background {
+        height: 1400px;
+    }
+
+    button {
+        width: 100px;
+    }
+}

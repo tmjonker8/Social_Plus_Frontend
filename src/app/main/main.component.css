@@ -1,0 +1,30 @@
+.background {
+    background-image: url("../../assets/images/social.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-background {
+    background-image: url("../../assets/images/banner.png");
+    background-size: contain;
+  }
+
+  .profile-image {
+    width: 140px;
+  }
+
+.opaque {
+    opacity: 90%;
+}
+
+.ww {
+    word-break: break-all;
+}
+
+@media (max-width: 800px) {
+    .banner-background {
+        background-size: cover;
+    }
+  }

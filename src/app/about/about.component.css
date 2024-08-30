@@ -1,0 +1,79 @@
+.imageCollage {
+    border: 2px solid black;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 75px auto;
+    max-width: 900px;
+}
+
+img{
+    border-radius: 0;
+    height: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 2px;
+  }
+
+  .outer {
+    text-align: center;
+    background-image: url("../../assets/images/social.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 1200px;
+  }
+
+  h1 {
+    -webkit-text-stroke: 3px black;
+    color: white;
+    padding-top: 100px;
+    transform: translateX(-200%);
+    margin-left: 50%;
+    animation: slide-in-anim 1.5s ease-out forwards;
+  }
+
+  @keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+  p {
+    margin-top: 20px;
+  }
+
+@media (max-width: 800px) {
+
+    .outer {
+        padding: 0px;
+        height: 1400px;
+    }
+
+    .imageCollage {
+        margin-top: 60px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+    img {
+        width: 30%;
+        height: auto;
+    }
+}
