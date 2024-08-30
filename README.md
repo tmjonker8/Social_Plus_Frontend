@@ -1,4 +1,4 @@
-![screenshot of program](https://github.com/tmjonker/social_plus_frontend/blob/master/src/assets/images/social_1.png)
+![screenshot of program](https://github.com/tmjonker8/Social_Plus_Frontend/blob/master/src/assets/images/social_1.png)
 
 # SocialMediaFrontend
 
