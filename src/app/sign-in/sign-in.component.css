@@ -2,7 +2,7 @@ form {
   padding: 20px;
   background-color: white;
   border: 1px solid black;
-  margin: 100px auto 0 auto;
+  margin: 75px auto 0 auto;
   width: 300px;
 }
 
@@ -20,13 +20,13 @@ form {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 700px;
+  height: 550px;
 }
 
 h1 {
   -webkit-text-stroke: 3px black;
   color: white;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 
 .animate {
